@@ -2,6 +2,22 @@
 
 // Remember that our list is called `todos`, and it's in `todos.js`. It's not in this file, nor is it being `require`-d in, but it's available globally because its file is loaded in BEFORE this one in `index.html`.
 
+<p>element</p>
+
+<button onclick="myFunction()">Try it</button><br><br>
+
+<script>
+function myFunction() {
+  var x = document.createElement("CODE");
+  var t = document.createTextNode("A piece of computer code");
+  x.appendChild(t);
+  document.body.appendChild(x);
+}
+</script>
+
+</body>
+</html>
+
 // Write each function below its comment and you'll be doing pretty well.  The printTodo function has been declared for you so that we can drill down in the comments on its individual steps. Add the code for each part below its comment as well.
 
 // Doing our code under its pre-written comment in this way will self-document your code and, more importantly, make it easier to follow along with the assignment!
